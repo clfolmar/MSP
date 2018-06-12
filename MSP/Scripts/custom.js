@@ -7,7 +7,7 @@ $(document).ready(function () {
 
         specificationCount = specificationCount + 1;
 
-        $("#messageSpecifications").append("<input type='text' id='[" + specificationCount + "].Specification' name='[" + specificationCount + "].Specification' class='form-control' value='' />");
+        $("#messageSpecifications").append("<input type='text' id='[" + specificationCount + "].Specification' name='[" + specificationCount + "].Specification' class='form-control' />");
 
     });
 
