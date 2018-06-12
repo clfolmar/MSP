@@ -40,6 +40,9 @@ namespace MSP.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             MessageSpecification messageSpecification = messageSpecifications.FirstOrDefault(m => m.Name.Equals(name));
+
+            ViewBag.MessageSpecificationOutput = Run(messageSpecification);
+
             if (messageSpecification == null)
             {
                 return HttpNotFound();
